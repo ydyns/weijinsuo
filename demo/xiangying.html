@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width , initial-scale=1"/>
+    <title>响应布局</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .box {
+            height: 170px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        /*如果用最小宽度来判断要从小到大判断*/
+        /*如果用最大宽度来判断要从大到小判断*/
+        @media screen and (min-width: 500px){
+            .container {
+                width: 300px;
+            }
+        }
+
+        @media screen and (min-width: 700px){
+            .container {
+                width: 650px;
+            }
+        }
+
+        @media screen and (min-width: 900px){
+
+            .container {
+                width: 810px;
+            }
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="container"></div>
+</body>
+</html>
